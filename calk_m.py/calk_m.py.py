@@ -5,17 +5,17 @@ from art import *
 kast ='>>'
 
 def sinus():
-    sin = input("Введите значение угла в градусах для нахождения синуса (sin){kast}")
+    sin = input(f"Введите значение угла в градусах для нахождения синуса (sin){kast}")
     sin = float(sin)
     print(math.sin(math.radians(sin)))
 
 def cosinus():   
-    cos = input("Введите значение угла в градусах для нахождения косинуса (cos){kast}")
+    cos = input(f"Введите значение угла в градусах для нахождения косинуса (cos){kast}")
     cos = float(cos)
     print(math.cos(math.radians(cos)))
 
 def tanget():
-    tan = input("Введите значение угла в градусах для нахождения тангенса (tan){kast}")
+    tan = input(f"Введите значение угла в градусах для нахождения тангенса (tan){kast}")
     tan = float(tan)
     print(math.tan(math.radians(tan)))
 
@@ -103,6 +103,8 @@ def convert_temperature(value, from_unit, to_unit):
         elif to_unit == 'Fahrenheit':
             return (value - 273.15) * 9/5 + 32
     return value  # Если единицы совпадают
+def koren(i) : 
+     return math.sqrt(i)
 
 
 def perivod():
@@ -140,7 +142,7 @@ def perivod():
 
 Art = text2art("calc", font='block', chr_ignore=True) 
 print(Art) 
-print(f'1 sinus , 2 cosinus , 3 tanget , 4 pi,  5 e , 6 radiys , 7 grafik , 8 Экспоненциальный рост , 9 перевод едениц')
+print(f'1 sinus , 2 cosinus , 3 tanget , 4 pi,  5 e , 6 radiys , 7 grafik , 8 Экспоненциальный рост , 9 перевод едениц , 10 корень числа')
 def meny():
     while True:
         menu = input(f'calk_m{kast}')
@@ -162,5 +164,8 @@ def meny():
             ekspodent_rost()
         elif menu == '9':
             perivod()
-        
+        elif menu =='10':
+            print(koren(int(input(f"{kast}")))) 
+        else:
+            print("error 1 команды нет")
 meny()
