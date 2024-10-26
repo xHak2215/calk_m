@@ -37,6 +37,7 @@ def grafik():
     mplcyberpunk.add_glow_effects()
     plt.show()
 def ekspodent_rost():
+    import matplotlib.pyplot as plt
 #y: Конечная сумма, оставшаяся за определенный период времени
 #a: исходная сумма
 #x: время
