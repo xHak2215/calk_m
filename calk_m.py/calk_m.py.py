@@ -3,6 +3,7 @@ import math
 from art import *
 # pip install mplcyberpunk
 kast ='>>'
+version = '1.0.0'
 
 def sinus():
     sin = input(f"Введите значение угла в градусах для нахождения синуса (sin){kast}")
