@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 name = "calk_m"
 version = "1.0.0"
 description = "я не знаю что тут пиать"
-authors = ["Yarik tg:<@HITHELL>"]
+authors = ["Yarik mutg <@HITHELL.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
