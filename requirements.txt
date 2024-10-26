@@ -1,0 +1,4 @@
+matplotlib ==3.9.1
+mpl-toolkits.clifford ==0.0.3
+python-dateutil ==2.9.0.post0
+mplcyberpunk ==0.7.1
